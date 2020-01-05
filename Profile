@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Profile
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Let`s fill out your profile");
+            Console.WriteLine();
+
+            Console.WriteLine("Enter your surname");
+            string surname = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("What is your age?");
+            int age = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.WriteLine("Wtat is your weight?");
+            double weight = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.WriteLine("What is youe height?");
+            double height = double.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            double bmi = weight / (height * height);
+
+            Console.WriteLine($"\t\tProfile:\n\nFull Name: {surname}, {name};\nAge: {age};\nWeight: {weight};\nHeight: {height};\nBody Mass Index: {bmi} ");
+            
+            
+        }
+    }
+}
