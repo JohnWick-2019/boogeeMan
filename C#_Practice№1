@@ -1,0 +1,56 @@
+using System;
+
+
+namespace Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+
+            Console.WriteLine($"Hello, {name}");
+
+            Console.WriteLine();
+
+            Console.WriteLine("Enter two numbers, please.");
+            Console.WriteLine();
+
+            Console.Write("Enter first number: ");
+
+            string a = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Enter second number: ");
+
+            string b = Console.ReadLine();
+
+            Console.WriteLine();
+
+            Console.WriteLine($" First number is {a}\n Second number is {b}");
+
+            Console.WriteLine();
+            string temp;
+
+            temp = a;
+            a = b;
+            b = temp;
+
+            Console.WriteLine($" First number is {a}\n Second number is {b}");
+
+            Console.WriteLine();
+
+            Console.Write("Enter a number: ");
+            string num = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine($"Yours number have a {num.Length} digits");
+
+
+
+
+
+
+        }
+    }
+}
