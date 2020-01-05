@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadanie_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Let`s introduce the three sides of the triangle ");
+            Console.WriteLine();
+
+            Console.Write("Enter the first side: ");
+            string first = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Enter the second side: ");
+            string second = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Enter the third side: ");
+            string third = Console.ReadLine();
+            Console.WriteLine();
+
+            double a = int.Parse(first);
+            double b = int.Parse(second);
+            double c = int.Parse(third);
+
+            double halfPerimeter = (a + b + c) / 2;
+            double temp = halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c);
+
+            double area = Math.Sqrt(temp);
+
+            Console.WriteLine($"Area of the triangle = {area}");
+
+
+
+
+        }
+    }
+}
