@@ -1,0 +1,37 @@
+using System;
+
+namespace FactorialOfNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What factorial do you want to find?");
+            int userNumber = int.Parse(Console.ReadLine());
+
+            int factorial = 1;
+
+            if (userNumber !=0)
+            {
+                for (int i = 1; i <= userNumber; i++)
+                {
+
+                    factorial *= i;
+                }
+                Console.WriteLine($"Factorial of {userNumber} = {factorial}");
+            }
+            else if (userNumber == 1)
+            {
+                Console.WriteLine($"Factorial of 1 = 1");
+            }
+            else
+            {
+                Console.WriteLine($"Factorial of 0 = 1");
+            }
+
+            
+            
+            
+        }
+    }
+}
